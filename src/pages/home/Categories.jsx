@@ -29,10 +29,11 @@ const categoryItems = [
 const Categories = () => {
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4 py-16">
-      <div className="text-center bg-gradient-to-r from-purple-500 via-green-400 to-lime-500 text-white p-10 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out hover:bg-purple-400 hover:text-black">
-        <p className="text-2xl font-semibold">Customer Favorites</p>
-        <h2 className="text-4xl font-extrabold mt-4">Popular Categories</h2>
-      </div>
+     <div className='text-center p-8 bg-gradient-to-r from-lime-500 to-amber-300 text-white'>
+    <p className='text-lg font-semibold mb-2'>Customer Favorites</p>
+    <h2 className='text-3xl font-extrabold'>Popular Categories</h2>
+</div>
+
 
       {/* category cards */}
       <div className="flex flex-col sm:flex-row flex-wrap gap-8 justify-around items-center mt-12 ">
