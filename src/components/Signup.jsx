@@ -36,8 +36,9 @@ const Signup = () => {
         // ..
       });
   };
+
   return (
-    <div className="max-w-md bg-white shadow w-full mx-auto flex items-center justify-center my-20 p-8 rounded-lg">
+    <div className="max-w-md bg-white shadow w-full mx-auto flex items-center justify-center my-20 rounded-lg p-8">
       <div className="modal-action flex flex-col justify-center mt-0 w-full">
         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
           <h3 className="font-bold text-2xl mb-4">Create An Account</h3>
@@ -68,9 +69,6 @@ const Signup = () => {
               </a>
             </p>
           </div>
-
-          {/* error */}
-          {/* You can display error messages here if needed */}
 
           {/* login btn */}
           <div className="mb-6">

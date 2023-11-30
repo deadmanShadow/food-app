@@ -3,6 +3,7 @@ import logo from "../../public/logo.png";
 import { IoMdContact } from "react-icons/io";
 import Modal from "./Modal";
 import { AuthContext } from "../contexts/AuthProvider";
+import Profile from './Profile';
 const Navbar = () => {
   const [isSticky, setSticky] = useState(false);
   const {user} = useContext(AuthContext);
@@ -138,11 +139,14 @@ const Navbar = () => {
             </div>
           </div>
           {/* btn */}
-          <button 
-          onClick={() => document.getElementById("my_modal_5").showModal()} className="btn bg-green rounded-full px-6 text-white flex items-center gap-2">
-          <IoMdContact />
-            Login
-          </button>
+          {
+          user? <Profile user={user}/> :  <button
+          onClick={() => document.getElementById("my_modal_5").showModal()}
+          className="btn flex items-center gap-2 rounded-full px-6 bg-green text-white"
+        >
+          <IoMdContact /> Login
+        </button>
+         }
           <Modal/>
         </div>
       </div>
