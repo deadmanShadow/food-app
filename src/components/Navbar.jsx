@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../public/logo.png";
-import { BiPhoneCall } from "react-icons/bi";
+import { IoMdContact } from "react-icons/io";
+import Modal from "./Modal";
 const Navbar = () => {
   const [isSticky, setSticky] = useState(false);
 
@@ -16,7 +17,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return() => {
       window.removeEventListener("scroll",handleScroll);
-    }
+    };
   },[]);
 
   const navItems = (
@@ -136,10 +137,12 @@ const Navbar = () => {
             </div>
           </div>
           {/* btn */}
-          <a className="btn bg-green rounded-full px-6 text-white flex items-center gap-2">
-            <BiPhoneCall />
-            Contact
-          </a>
+          <button 
+          onClick={() => document.getElementById("my_modal_5").showModal()} className="btn bg-green rounded-full px-6 text-white flex items-center gap-2">
+          <IoMdContact />
+            Login
+          </button>
+          <Modal/>
         </div>
       </div>
     </header>
