@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../public/logo.png";
 import { BiPhoneCall } from "react-icons/bi";
 const Navbar = () => {
+  const [isSticky, setSticky] = useState(false);
+
+  useEffect(()=>{
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if(offset > 0){
+        setSticky(true);
+      } else{
+        setSticky(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return() => {
+      window.removeEventListener("scroll",handleScroll);
+    }
+  },[]);
+
   const navItems = (
     <>
       <li>
-        <a className="text-green">Home</a>
+        <a className="text-green" href="/">Home</a>
       </li>
       <li tabIndex={0}>
         <details>
