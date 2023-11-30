@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { FaFacebookF, FaGithub, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form"
+;
 import { AuthContext } from "../contexts/AuthProvider";
 const Modal = () => {
     const {
