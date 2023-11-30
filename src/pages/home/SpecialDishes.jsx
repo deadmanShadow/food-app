@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { FaHeart} from "react-icons/fa"
 import { FaAngleRight, FaAngleLeft  } from "react-icons/fa6";
 import Cards from "./Cards";
 
@@ -85,10 +84,11 @@ const SpecialDishes = () => {
   };
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4 my-20 relative">
-       <div className='text-left'>
-            <p className='subtitle'>Customer Favorites</p>
-            <h2 className='title'>Popular Catagories</h2>
-        </div>
+     <div className='text-left p-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white'>
+    <p className='text-lg font-bold mb-2'>Customer Favorites</p>
+    <h2 className='text-3xl font-extrabold'>Popular Categories</h2>
+</div>
+
       <div className="md:absolute right-3 top-8 mb-10 md:mr-24">
         <button onClick={() => slider?.current?.slickPrev()}
         className=" btn p-2 rounded-full ml-5"

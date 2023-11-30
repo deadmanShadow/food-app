@@ -28,10 +28,10 @@ const categoryItems = [
 
 const Categories = () => {
   return (
-    <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4 py-16">
-     <div className='text-center p-8 bg-gradient-to-r from-lime-500 to-amber-300 text-white'>
-    <p className='text-lg font-semibold mb-2'>Customer Favorites</p>
-    <h2 className='text-3xl font-extrabold'>Popular Categories</h2>
+    <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4 my-20 relative">
+    <div className='text-left p-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white'>
+   <p className='text-lg font-bold mb-2'>Explore Specialties</p>
+   <h2 className='text-3xl font-extrabold'>Exquisite Selection</h2>
 </div>
 
 
