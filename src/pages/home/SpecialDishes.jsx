@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import Slider from "react-slick";
-import { FaAngleRight, FaAngleLeft  } from "react-icons/fa6";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import Cards from "./Cards";
 
 const SampleNextArrow = (props) => {
